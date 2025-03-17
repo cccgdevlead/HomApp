@@ -1,50 +1,23 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
+# Specifies files to intentionally not track by Git
 
-*~
-*.sw[mnpcod]
-.tmp
-*.tmp
-*.tmp.*
-UserInterfaceState.xcuserstate
-$RECYCLE.BIN/
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-*.log
-log.txt
-
-
-/.sourcemaps
-/.versions
+# Testing
 /coverage
 
-# Ionic
-/.ionic
+# Production build folders
 /www
 /platforms
 /plugins
-
-# Compiled output
+/ios
+/android
 /dist
-/tmp
 /out-tsc
-/bazel-out
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-project
-*.sublime-workspace
-
-# Visual Studio Code
+# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -52,19 +25,43 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# IDE - JetBrains/WebStorm
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Miscellaneous
-/.angular
-/.angular/cache
-.sass-cache/
-/.nx
-/.nx/cache
+# IDE - Eclipse
+.settings/
+.project
+.buildpath
+
+# misc
+/.sass-cache
 /connect.lock
 /coverage
 /libpeerconnection.log
+npm-debug.log
+yarn-error.log
 testem.log
 /typings
+/.angular/cache
+.gradle
 
-# System files
+# System Files
 .DS_Store
 Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled output
+*.map
+*.js.map

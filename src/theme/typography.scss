@@ -1,0 +1,112 @@
+// src/theme/typography.scss
+
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+// Note: You'll need to obtain the Neue Haas Grotesk fonts separately as they're not available on Google Fonts
+
+// Typography Variables
+:root {
+  // Font Families
+  --font-primary: 'Neue Haas Grotesk Display Pro', sans-serif;
+  --font-secondary: 'Urbanist', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  // Font Weights
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  // Colors
+  --color-text-primary: #212121;
+  --color-text-secondary: #BDBDBD;
+  --color-text-tertiary: #9E9E9E;
+}
+
+// Heading Styles
+.h1 {
+  font-family: var(--font-primary);
+  font-size: 48px;
+  line-height: 160%;
+  font-weight: var(--font-medium);
+  color: var(--color-text-primary);
+
+  &--bold { font-weight: var(--font-bold); }
+  &--medium { font-weight: var(--font-medium); }
+  &--regular { font-weight: var(--font-regular); }
+}
+
+.h2 {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  line-height: 160%;
+  font-weight: var(--font-medium);
+  color: var(--color-text-primary);
+
+  &--bold { font-weight: var(--font-bold); }
+  &--medium { font-weight: var(--font-medium); }
+  &--regular { font-weight: var(--font-regular); }
+}
+
+.h3 {
+  font-family: var(--font-primary);
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: var(--font-medium);
+  color: var(--color-text-primary);
+
+  &--bold { font-weight: var(--font-bold); }
+  &--medium { font-weight: var(--font-medium); }
+  &--regular { font-weight: var(--font-regular); }
+}
+
+// Body Text Styles
+.body {
+  &-xlarge {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    
+    &--bold { font-weight: var(--font-bold); }
+    &--semibold { font-weight: var(--font-semibold); }
+    &--medium { font-weight: var(--font-medium); }
+    &--regular { font-weight: var(--font-regular); }
+  }
+
+  &-large {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    
+    &--bold { font-weight: var(--font-bold); }
+    &--semibold { font-weight: var(--font-semibold); }
+    &--medium { font-weight: var(--font-medium); }
+    &--regular { font-weight: var(--font-regular); }
+  }
+
+  &-medium {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    
+    &--bold { font-weight: var(--font-bold); }
+    &--semibold { font-weight: var(--font-semibold); }
+    &--medium { font-weight: var(--font-medium); }
+    &--regular { font-weight: var(--font-regular); }
+  }
+
+  &-small {
+    font-family: var(--font-primary);
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    
+    &--bold { font-weight: var(--font-bold); }
+    &--semibold { font-weight: var(--font-semibold); }
+    &--medium { font-weight: var(--font-medium); }
+    &--regular { font-weight: var(--font-regular); }
+  }
+}

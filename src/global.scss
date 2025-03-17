@@ -9,6 +9,8 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+@import './theme/typography.scss';
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -35,3 +37,67 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Regular/Roman */
+@font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Roman Italic */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayRomanItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  /* Medium */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayMediu.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Medium Italic */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Bold Italic */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayBoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* Black */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  /* Black Italic */
+  @font-face {
+    font-family: 'Neue Haas Display';
+    src: url('/assets/fonts/NeueHaasDisplayBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }

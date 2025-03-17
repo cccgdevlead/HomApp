@@ -21,6 +21,13 @@
     "lib": ["es2018", "dom"],
     "useDefineForClassFields": false
   },
+  "include": [
+    "src/**/*",
+    "capacitor.config.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "capacitor.config.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
